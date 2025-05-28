@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>📺 베페라 소개</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+      color: #e0e0e0;
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.8;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 10px;
+      animation: fadeUp 1.5s ease both;
+    }
+
+    header h1 {
+      font-size: 3em;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      color: #aaa;
+      margin-top: 0;
+    }
+
+    section {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #1e1e1e;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: all 0.3s ease;
+      animation: fadeUp 1.5s ease both;
+    }
+
+    section:hover {
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #ffffff;
+      border-left: 5px solid #444;
+      padding-left: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #80cbc4;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #4dd0e1;
+    }
+
+    .highlight {
+      color: #ff8a65;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: #555;
+      font-size: 0.9em;
+      margin-top: 60px;
+      animation: fadeUp 1.5s ease both;
+    }
+
+    @keyframes fadeUp {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🎧 베페라</h1>
+    <p>편안하게 머물다 갈 수 있는 작은 타천사의 공간</p>
+  </header>
+
+  <section>
+    <h2>😈 베페라 소개</h2>
+    <p>안녕하세요, 저는 타천사 콘셉트의 버추얼 스트리머 <strong>베페라</strong>입니다.</p>
+    <p>잔잔한 소통방송, 게임방송, 랜덤방송까지 — 여러분과 함께하는 시간을 소중히 여깁니다.<br>
+    💌 비즈니스 문의: <a href="mailto:lpi616050@gmail.com">lpi616050@gmail.com</a></p>
+  </section>
+
+  <section>
+    <h2>📌 주요 콘텐츠</h2>
+    <ul>
+      <li>🗣️ 잔잔한 소통 방송</li>
+      <li>🎮 라이트한 게임 플레이</li>
+      <li>🎲 랜덤하고 자유로운 이야기</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔮 오늘의 작은 한 마디</h2>
+    <p id="dailyMessage" style="font-style: italic; font-size: 1.1em; color: #ffcdd2;"></p>
+  </section>
+
+  <section>
+    <h2>⛩️ 베페라 신사 - 오늘의 운세</h2>
+    <p><strong id="fortuneRank" style="font-size: 1.3em; color: #ffee58;"></strong></p>
+    <p id="fortuneDesc" style="color: #b0bec5;"></p>
+  </section>
+
+  <section>
+    <h2>📜 방송 규칙</h2>
+    <p class="highlight">📌 규칙을 읽지 않고 발생하는 문제는 전적으로 본인의 책임입니다!</p>
+    <ul>
+      <li>✅ 서로 예의를 지켜주세요</li>
+      <li>✅ 방송 흐름을 존중해주세요</li>
+      <li>✅ 타 스트리머 언급 금지</li>
+      <li>✅ 과도한 TMI(사생활 이야기) 금지</li>
+      <li>✅ 시청자 간 친목 금지</li>
+      <li>✅ 갑질 금지 (명령, 강요 ❌)</li>
+      <li>✅ 전생(다른 닉네임, 과거 활동) 언급 금지</li>
+      <li>✅ "시참 안 하나요?" 질문 금지 — 할 때 공지합니다!</li>
+      <li>✅ 인사는 <strong>“베하 베바”</strong>로 통일해주세요 💬</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>🔗 링크 모음</h2>
+    <ul>
+      <li><a href="https://chzzk.naver.com/8708b194599d9d2a2d07199adc64fd25" target="_blank">치지직 방송국</a></li>
+      <li><a href="https://discord.gg/WY7xycNPAv" target="_blank">디스코드 채널</a></li>
+      <li><a href="https://www.youtube.com/@Bepperra" target="_blank">유튜브 채널</a></li>
+      <li><a href="https://x.com/beferra0110?s=21" target="_blank">X (트위터)</a></li>
+      <li><a href="https://fancim.me/celeb/profile.aspx?url=758954" target="_blank">팬심 프로필</a></li>
+      <li><a href="https://comic.naver.com/artistTitle?id=37402" target="_blank">네이버 웹툰 작가 페이지</a></li>
+      <li><a href="https://forms.gle/L9KvrfreY1cfQoE68" target="_blank">🎨 커미션 신청 양식</a></li>
+      <li><a href="https://www.pixiv.net/users/111445508" target="_blank">Pixiv 작품 모음</a></li>
+      <li><a href="https://litt.ly/beferra0110" target="_blank">Link in Bio (lit.ly)</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    © 2025 Bepperra 방송. All rights reserved.
+  </footer>
+
+  <script>
+    const messages = [
+      "오늘의 너는, 말 없는 별빛보다 따뜻할 거야 ✨",
+      "작은 시련은 내일의 선물일지도 몰라요.",
+      "너무 애쓰지 않아도 괜찮아, 내가 여기 있으니까.",
+      "조용히 눈을 감으면, 나랑 연결될지도 몰라요.",
+      "하늘도 쉬는 날이 있어요. 오늘은 그런 날이에요."
+    ];
+
+    const fortunes = [
+      { rank: "🌫️ 반흉 (Half Misfortune)", desc: "흔하지 않은 신의 경고. 어쩌면 특별한 기회일지도 몰라요." },
+      { rank: "✨ 대길 (Great Blessing)", desc: "오늘은 모든 일이 술술 풀릴 기세예요. 원하는 걸 말해보세요!" },
+      { rank: "🌕 중길 (Moderate Blessing)", desc: "무난한 하루가 될 거예요. 작은 기쁨을 놓치지 마세요." },
+      { rank: "🍃 소길 (Small Blessing)", desc: "작은 행운이 당신 곁에 있어요. 주위를 잘 살펴보세요." },
+      { rank: "🌑 흉 (Misfortune)", desc: "쉬어가는 하루가 필요할지도 몰라요. 무리하지 말아요." }
+    ];
+
+    const today = new Date();
+    const index = today.getFullYear() + today.getMonth() + today.getDate();
+
+    const message = messages[index % messages.length];
+    const fortune = fortunes[index % fortunes.length];
+
+    document.getElementById("dailyMessage").innerText = message;
+    document.getElementById("fortuneRank").innerText = fortune.rank;
+    document.getElementById("fortuneDesc").innerText = fortune.desc;
+  </script>
+
+</body>
+</html>
